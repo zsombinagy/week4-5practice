@@ -1,27 +1,18 @@
-console.log("hello world");
+const arr = [1 ,2 ,3 ,4 ,5]
 
-function domManipulation() {
-  const rootElement = document.querySelector(`#root`);
-  console.log(rootElement);
-  rootElement.innerHTML = "this is done by dom manipulation";
+/* function returnDouble(number) {
+    return number * 2
 }
 
+const returnDouble2 = number => number * 2
 
+for (const item of arr) {
+    console.log(returnDouble2(item))
+} */
 
-function logClick() {
-    console.log("clicked")
-
-
+/* function logDouble(number) {
+    console.log( element * 2)
 }
+*/
+arr.forEach(logger = number => number * 2)
 
-
-function logTick() {
-    
-    
-
-}
-
-window.addEventListener("load", domManipulation);
-window.addEventListener("click", logTick)
-
-window.setInterval(logTick, 1000)
